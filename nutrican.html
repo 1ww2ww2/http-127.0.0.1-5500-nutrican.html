@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>NutriCan - Efecto del enlatado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>NutriCan 🍑🥬🐟</h1>
+    <p class="subtitle">
+      Efecto del enlatado sobre los nutrientes en alimentos procesados
+    </p>
+  </header>
+
+  <!-- Contenedor de tarjetas (se llena dinámicamente desde script.js) -->
+  <section class="card-container" id="card-container"></section>
+
+  <!-- Gráfico -->
+  <section class="chart-section">
+    <div class="chart-container">
+      <canvas id="nutriChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Panel de información -->
+  <section class="info-box" id="info">
+    <h2>Selecciona un alimento para ver detalles</h2>
+    <p>Haz clic en una tarjeta de arriba para actualizar el gráfico y el análisis.</p>
+  </section>
+
+  <footer class="footer">
+    <small>
+      Nota: valores ilustrativos con base en tendencias reportadas en literatura científica (con fines educativos).
+    </small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
